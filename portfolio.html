@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhay - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(20, 21, 55);
+            color: white;
+            font-family: "Poppins", sans-serif;
+            min-height: 100vh;
+            /* Add this line */
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgba(58, 42, 138, 0.429);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(180, 196, 234);
+            font-size: 1.01rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 23px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+            margin: 70px 0;
+        }
+
+        .rightsection img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(186, 21, 186);
+        }
+
+        .learning {
+            color: grey;
+        }
+
+        #element {
+            color: rgb(186, 21, 186);
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(171, 183, 242);
+            height: 1px;
+            margin: 40px 80px;
+        }
+
+        .second_section {
+            max-width: 80vw;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+
+        .second_section h1 {
+            font-size: 2rem;
+        }
+
+        .second_section .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .second_section .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 180px;
+        }
+
+        /* .third_section {
+            max-width: 80vw;
+            margin: auto;
+            margin-top: 20px;
+            height: auto;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+        } */
+
+        .image-top {
+            width: 30px;
+            position: relative;
+            top: -36px;
+            left: -14px;
+        }
+
+        .image-top_2 {
+            width: 50px;
+            position: relative;
+            top: -40px;
+            left: -24px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 71px;
+            left: -48px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 80px;
+            color: grey;
+            width: 200px;
+            left: -50px;
+            font-size: 15px;
+        }
+
+        .vertical-desc_3 {
+            position: relative;
+            top: 80px;
+            color: grey;
+            width: 250px;
+            left: -50px;
+            font-size: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .last_section {
+            color: white;
+        }
+
+        /* Ensure sections have automatic height based on content */
+        section {
+            padding: 20px;
+            min-height: 100vh;
+            /* Ensures each section takes up at least the full viewport height */
+            box-sizing: border-box;
+        }
+
+        #third_section {
+            clear: both;
+            /* Ensures this section is displayed after the previous one */
+            margin-top: 20px;
+            max-width: 80vw;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+
+        .third_section h1 {
+            font-size: 2rem;
+        }
+
+        .second_hr {
+            border: 0;
+            background: rgb(171, 183, 242);
+            height: 1.5px;
+            margin: 40px 80px;
+            /* width: 5px; */
+        }
+        h1{
+            position: relative;
+            width: max-content;
+        }
+        h1::after{
+            content: '';
+            background: linear-gradient(to right, red, blue);
+            border-radius: 100px;
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: 100ms;
+        }
+        h1:hover::after{
+            width: 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Abhay's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi, my name is <span class="purple">Abhay</span>
+                <div>and I'm a</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="Developer.webp" alt="">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="second_section">
+            <span class="learning">What I have done so far.....</span>
+            <h1>Learning Experiences....</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html-5_318-674234.avif" alt="">
+                    <div class="vertical-title">Frontend Developer (2023)</div>
+                    <div class="vertical-desc">As a Frontend Developer, I am responsible for designing and
+                        implementing the visual aspects of websites and web applications. I have used technologies like
+                        HTML, CSS, and JavaScript to create responsive, user-friendly interfaces, ensuring that the
+                        layout and functionality are visually appealing across various devices and browsers.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top_2" src="Python_Logoo.png" alt="">
+                    <div class="vertical-title">Python Developer(2024)</div>
+                    <div class="vertical-desc">I started learning Python this year and it's been a great journey. Now,
+                        I'm focused on backend development using Python with frameworks like Flask, and soon Django.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="machine-learning-logo.jpeg" alt="">
+                    <div class="vertical-title">Machine Learning(2024)</div>
+                    <div class="vertical-desc_3">I started exploring Machine Learning due to my interest in AI. ML
+                        enables systems to learn from data and improve without being explicitly programmed. My work
+                        involves analyzing data, recognizing patterns, and applying this knowledge across fields like
+                        healthcare and finance.
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <hr class="second_hr">
+        <!-- <section class="third_section">
+            <span class="learning">What I have done so far.....</span>
+            <h1>Learning Experiences....</h1>
+        </section> -->
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Frontend Developer', 'Python Developer', 'Video Editor', 'Machine Learning Enthusiast'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
